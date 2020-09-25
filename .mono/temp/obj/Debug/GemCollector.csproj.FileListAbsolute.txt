@@ -1,0 +1,16 @@
+D:/Programming/GameDev/GemCollector/.mono/temp/bin/Debug/GemCollector.dll
+D:/Programming/GameDev/GemCollector/.mono/temp/bin/Debug/GemCollector.pdb
+D:/Programming/GameDev/GemCollector/.mono/temp/obj/Debug/GemCollector.csprojAssemblyReference.cache
+D:/Programming/GameDev/GemCollector/.mono/temp/obj/Debug/GemCollector.AssemblyInfoInputs.cache
+D:/Programming/GameDev/GemCollector/.mono/temp/obj/Debug/GemCollector.AssemblyInfo.cs
+D:/Programming/GameDev/GemCollector/.mono/temp/obj/Debug/GemCollector.csproj.CoreCompileInputs.cache
+D:/Programming/GameDev/GemCollector/.mono/temp/obj/Debug/GemCollector.dll
+D:/Programming/GameDev/GemCollector/.mono/temp/obj/Debug/GemCollector.pdb
+/home/asus/GameDev/GodotProjects/GemCollector/.mono/temp/bin/Debug/GemCollector.dll
+/home/asus/GameDev/GodotProjects/GemCollector/.mono/temp/bin/Debug/GemCollector.pdb
+/home/asus/GameDev/GodotProjects/GemCollector/.mono/temp/obj/Debug/GemCollector.csprojAssemblyReference.cache
+/home/asus/GameDev/GodotProjects/GemCollector/.mono/temp/obj/Debug/GemCollector.AssemblyInfoInputs.cache
+/home/asus/GameDev/GodotProjects/GemCollector/.mono/temp/obj/Debug/GemCollector.AssemblyInfo.cs
+/home/asus/GameDev/GodotProjects/GemCollector/.mono/temp/obj/Debug/GemCollector.csproj.CoreCompileInputs.cache
+/home/asus/GameDev/GodotProjects/GemCollector/.mono/temp/obj/Debug/GemCollector.dll
+/home/asus/GameDev/GodotProjects/GemCollector/.mono/temp/obj/Debug/GemCollector.pdb

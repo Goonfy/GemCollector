@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Low_Poly_Ladder_02_Tall.obj-2602036af1e22007ea1c8a163d89aabe.mesh"
+
+[deps]
+
+files=[ "res://.import/Low_Poly_Ladder_02_Tall.obj-2602036af1e22007ea1c8a163d89aabe.mesh" ]
+
+source_file="res://Assets/Models/Ladders/Low_Poly_Ladder_02/Low_Poly_Ladder_02_Tall.obj"
+dest_files=[ "res://.import/Low_Poly_Ladder_02_Tall.obj-2602036af1e22007ea1c8a163d89aabe.mesh", "res://.import/Low_Poly_Ladder_02_Tall.obj-2602036af1e22007ea1c8a163d89aabe.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

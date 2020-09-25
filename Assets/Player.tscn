@@ -1,0 +1,59 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Scripts/Player.cs" type="Script" id=1]
+[ext_resource path="res://Assets/Models/Player/Robot.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Textures/heart.png" type="Texture" id=3]
+
+[sub_resource type="BoxShape" id=1]
+extents = Vector3( 0.905634, 2.28125, 0.676143 )
+
+[node name="Player" type="KinematicBody" groups=[
+"player",
+]]
+collision_mask = 15
+script = ExtResource( 1 )
+
+[node name="Camera" type="Camera" parent="."]
+current = true
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.26146, 0 )
+shape = SubResource( 1 )
+
+[node name="Rotation_Helper" type="Spatial" parent="."]
+
+[node name="Model" type="Spatial" parent="Rotation_Helper"]
+
+[node name="Armature" type="Spatial" parent="Rotation_Helper/Model"]
+
+[node name="Robot" parent="Rotation_Helper/Model" instance=ExtResource( 2 )]
+transform = Transform( -1, 0, -3.25841e-007, 0, 1, 0, 3.25841e-007, 0, -1, 0, 0, 0 )
+
+[node name="Flashlight" type="SpotLight" parent="Rotation_Helper"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.485289, 0.339927, -0.926317 )
+visible = false
+spot_range = 7.34987
+spot_angle = 14.2626
+
+[node name="HUD" type="Control" parent="."]
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Heart" type="Sprite" parent="HUD"]
+modulate = Color( 1, 1, 1, 0.392157 )
+position = Vector2( 46, 726 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 3 )
+
+[node name="Heart2" type="Sprite" parent="HUD"]
+modulate = Color( 1, 1, 1, 0.392157 )
+position = Vector2( 96, 726 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 3 )
+
+[node name="Heart3" type="Sprite" parent="HUD"]
+modulate = Color( 1, 1, 1, 0.392157 )
+position = Vector2( 146, 726 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 3 )

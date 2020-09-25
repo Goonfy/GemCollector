@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/BoxCat_Games_-_11_-_Assignment.wav-564beea5bb6f2293faaabe12e9116bf0.sample"
+
+[deps]
+
+source_file="res://Assets/Sounds/BoxCat_Games_-_11_-_Assignment.wav"
+dest_files=[ "res://.import/BoxCat_Games_-_11_-_Assignment.wav-564beea5bb6f2293faaabe12e9116bf0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

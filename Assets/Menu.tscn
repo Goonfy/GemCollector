@@ -1,0 +1,124 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://Assets/Player_Menu.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Barrel.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Environment/Large_Floor.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scripts/Menu.cs" type="Script" id=4]
+[ext_resource path="res://Assets/CenturyGothic.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://Assets/Environment/Pickup_Gem.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/Sounds/awesomeness.wav" type="AudioStream" id=7]
+[ext_resource path="res://Assets/Sounds/confirm_style_1_echo_001.wav" type="AudioStream" id=8]
+
+[sub_resource type="StyleBoxEmpty" id=1]
+
+[sub_resource type="StyleBoxEmpty" id=2]
+
+[sub_resource type="StyleBoxEmpty" id=3]
+
+[sub_resource type="DynamicFont" id=4]
+size = 35
+font_data = ExtResource( 5 )
+
+[sub_resource type="StyleBoxEmpty" id=5]
+
+[sub_resource type="StyleBoxEmpty" id=6]
+
+[sub_resource type="StyleBoxEmpty" id=7]
+
+[sub_resource type="StyleBoxEmpty" id=8]
+
+[sub_resource type="DynamicFont" id=9]
+size = 70
+font_data = ExtResource( 5 )
+
+[node name="Menu" type="Spatial"]
+script = ExtResource( 4 )
+
+[node name="Barrel" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0.722245, 5.44103, 0 )
+isInMenu = true
+
+[node name="Barrel2" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, -0.0329218, 3.41022, 0 )
+isInMenu = true
+
+[node name="Barrel3" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 1.4118, 3.39864, 0 )
+isInMenu = true
+
+[node name="Camera" type="Camera" parent="."]
+transform = Transform( 0.955562, 0, 0.294791, 0, 1, 0, -0.294791, 0, 0.955562, -0.74827, 6.15125, 10.9342 )
+
+[node name="LargeFloor" parent="." instance=ExtResource( 3 )]
+
+[node name="LargeFloor2" parent="." instance=ExtResource( 3 )]
+
+[node name="Mob Levels" type="Button" parent="."]
+margin_left = 156.194
+margin_top = 280.344
+margin_right = 588.194
+margin_bottom = 343.344
+custom_styles/hover = SubResource( 1 )
+custom_styles/pressed = SubResource( 2 )
+custom_styles/normal = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
+text = "Mob Gamemode"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Barrel Levels" type="Button" parent="."]
+margin_left = 146.194
+margin_top = 330.344
+margin_right = 601.194
+margin_bottom = 393.344
+custom_styles/hover = SubResource( 5 )
+custom_styles/pressed = SubResource( 6 )
+custom_styles/normal = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
+text = "Barrel Gamemode"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Exit" type="Button" parent="."]
+margin_left = 153.194
+margin_top = 381.344
+margin_right = 585.194
+margin_bottom = 444.344
+custom_styles/hover = SubResource( 7 )
+custom_styles/pressed = SubResource( 8 )
+custom_styles/normal = SubResource( 3 )
+custom_fonts/font = SubResource( 4 )
+text = "Exit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Player" parent="." instance=ExtResource( 1 )]
+transform = Transform( -1, 0, -3.25841e-07, 0, 1, 0, 3.25841e-07, 0, -1, -2.89783, 0.314981, 0 )
+
+[node name="Gem" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0.699457, 4.44686, 0 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 118.324
+margin_top = 137.394
+margin_right = 623.324
+margin_bottom = 224.394
+custom_fonts/font = SubResource( 9 )
+text = "Gem Collector"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -10.0
+autoplay = true
+
+[node name="ClickMenuButton" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+[connection signal="pressed" from="Mob Levels" to="." method="_on_Mob_Levels_pressed"]
+[connection signal="pressed" from="Barrel Levels" to="." method="_on_Barrel_Levels_pressed"]
+[connection signal="pressed" from="Exit" to="." method="_on_Exit_pressed"]

@@ -1,0 +1,61 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Assets/Environment/Pickup_Gem.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Environment/Small_Ladder.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Environment/Large_Floor.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/Environment/Medium_Floor.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Assets/Environment/Moving_Plataform.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/Enemy.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Assets/Sounds/BoxCat_Games_-_10_-_Epic_Song.wav" type="AudioStream" id=8]
+
+[node name="Level2" type="Spatial"]
+
+[node name="Env" type="Spatial" parent="."]
+transform = Transform( -1, 0, -3.25841e-007, 0, 1, 0, 3.25841e-007, 0, -1, 0, 0, 0 )
+
+[node name="Ladders" type="Spatial" parent="Env"]
+
+[node name="Small_Ladder2" parent="Env/Ladders" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14.9229, 9.05856, 1.01725 )
+
+[node name="Small_Ladder3" parent="Env/Ladders" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.1513, 35.4672, 4.17737 )
+
+[node name="Small_Ladder5" parent="Env/Ladders" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 22.4758, 3.23503, -2.81064 )
+
+[node name="Floors" type="Spatial" parent="Env"]
+
+[node name="LargeFloor" parent="Env/Floors" instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.61444e-006, 0, -4.95468 )
+
+[node name="MediumFloor" parent="Env/Floors" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.98025e-007, 5.91386, -1.22153 )
+
+[node name="MediumFloor2" parent="Env/Floors" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -16.9057, 11.7242, 2.60976 )
+
+[node name="Moving_Plataform" parent="Env/Floors" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10.2372, 11.6965, 2.70054 )
+maximumHeight = 18
+
+[node name="Player" parent="." instance=ExtResource( 4 )]
+transform = Transform( -1.62921e-007, 0, 1, 0, 1, 0, -1, 0, -1.62921e-007, -45.8908, 2.98485, 4.97422 )
+
+[node name="Gem" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10.1529, 39.6912, -4.18035 )
+
+[node name="Enemy" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 14.9358, -2.64532 )
+
+[node name="Enemy2" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -17.4091, 9.01517, 1.16605 )
+
+[node name="Enemy3" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 32.7587, 3.16625, 4.89742 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = -10.0
+autoplay = true

@@ -1,0 +1,68 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Assets/Environment/Pickup_Gem.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Assets/Environment/Small_Ladder.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Assets/Enemy.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Assets/Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/Environment/Large_Floor.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Assets/Environment/Small_Floor.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Assets/Sounds/BoxCat_Games_-_21_-_Rhythm.wav" type="AudioStream" id=7]
+
+[node name="Level1" type="Spatial"]
+
+[node name="Env" type="Spatial" parent="."]
+transform = Transform( -1, 0, -3.25841e-007, 0, 1, 0, 3.25841e-007, 0, -1, 0, 0, 0 )
+
+[node name="Ladders" type="Spatial" parent="Env"]
+
+[node name="Small_Ladder" parent="Env/Ladders" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -37.0804, 15.3443, 4.75944 )
+
+[node name="Small_Ladder2" parent="Env/Ladders" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -14.9229, 9.05856, 1.01725 )
+
+[node name="Small_Ladder3" parent="Env/Ladders" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00169083, 21.6903, 14.514 )
+
+[node name="Small_Ladder5" parent="Env/Ladders" instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 37.7052, 3.23503, -2.81063 )
+
+[node name="Floors" type="Spatial" parent="Env"]
+
+[node name="LargeFloor" parent="Env/Floors" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0657e-006, 18.0314, 6.33959 )
+
+[node name="LargeFloor2" parent="Env/Floors" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 3.97786e-007, 5.97942, -1.2208 )
+
+[node name="LargeFloor3" parent="Env/Floors" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.46356e-007, 11.7564, 2.59745 )
+
+[node name="LargeFloor4" parent="Env/Floors" instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 1.61977e-006, 0, -4.97105 )
+
+[node name="SmallFloor" parent="Env/Floors" instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5.24884e-006, 24.392, 16.1086 )
+
+[node name="Player" parent="." instance=ExtResource( 4 )]
+transform = Transform( -1.62921e-007, 0, 1, 0, 1, 0, -1, 0, -1.62921e-007, 39.7014, 1.76078, 4.97422 )
+
+[node name="Enemy" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 36.9604, 9.3771, 1.17436 )
+
+[node name="Enemy2" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -25.083, 15.3291, -2.56431 )
+
+[node name="Enemy3" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -47.5607, 21.4379, -6.3748 )
+
+[node name="Enemy4" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 46.1222, 21.4379, -6.3748 )
+
+[node name="Gem" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 25.9143, -16.1165 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -10.0
+autoplay = true

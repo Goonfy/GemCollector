@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Ghost.obj-4ab324d69e8646105d1cf4bfba8becbd.mesh"
+
+[deps]
+
+files=[ "res://.import/Ghost.obj-4ab324d69e8646105d1cf4bfba8becbd.mesh" ]
+
+source_file="res://Assets/Models/Enemy/Ghost.obj"
+dest_files=[ "res://.import/Ghost.obj-4ab324d69e8646105d1cf4bfba8becbd.mesh", "res://.import/Ghost.obj-4ab324d69e8646105d1cf4bfba8becbd.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

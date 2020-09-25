@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Gem8.obj-399a0a7e5eb64f626fe13c3adf90471b.mesh"
+
+[deps]
+
+files=[ "res://.import/Gem8.obj-399a0a7e5eb64f626fe13c3adf90471b.mesh" ]
+
+source_file="res://Assets/Models/Pickups/Gem8.obj"
+dest_files=[ "res://.import/Gem8.obj-399a0a7e5eb64f626fe13c3adf90471b.mesh", "res://.import/Gem8.obj-399a0a7e5eb64f626fe13c3adf90471b.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

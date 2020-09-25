@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/confirm_style_5_echo_001.wav-956a60bed2d13079037d15e3d3e267d0.sample"
+
+[deps]
+
+source_file="res://Assets/Sounds/confirm_style_5_echo_001.wav"
+dest_files=[ "res://.import/confirm_style_5_echo_001.wav-956a60bed2d13079037d15e3d3e267d0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
